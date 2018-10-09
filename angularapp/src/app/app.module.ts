@@ -4,12 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { FirstComponent } from './testComponents/firstExample/first.component';
 import { SecondComponentsComponent} from './testComponents/secondComponents/secondComponents.component';
-
+import { ThirdExampleComponent } from './testComponents/thirdExample/thirdExample.component';
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponent,
-    SecondComponentsComponent
+    SecondComponentsComponent,
+    ThirdExampleComponent
   ],
   imports: [
     BrowserModule
