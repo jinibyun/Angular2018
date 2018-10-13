@@ -12,8 +12,12 @@ import { User } from '../../models/User'; // call interface (manually create)
 })
 export class ThirdExampleComponent implements OnInit {  
   users:User[];
-  showExtended : boolean = true;
+  showExtended : boolean = false;
   loaded:boolean = true; // mimi data loading
+  
+  enabledAdd:boolean = true; // property binding
+  currentClasses = {}; // empty object
+  currentStyles = {};
   // normally it is used with Dependency Injection
   constructor() { }
 
@@ -30,11 +34,19 @@ export class ThirdExampleComponent implements OnInit {
             street: "120 King St",
             city: "Toronto",
             state: "ON"
-          }
+          },
+          image: 'http://lorempixel.com/600/600/people/3',
+		  isActive: true,
+		  balance:100,
+		  registered:new Date('01/02/2018 08:30:00')
         },
         {
           firstName : "Kevin",
-          lastName : "Johnson"          
+          lastName : "Johnson"   ,
+          image: 'http://lorempixel.com/600/600/people/2'   ,
+		  isActive: false   ,
+		  balance:200,
+		  registered:new Date('03/11/2017 08:30:00') 
         },
         {
           firstName : "Caren",
@@ -44,7 +56,10 @@ export class ThirdExampleComponent implements OnInit {
             street: "123 yonge ave",
             city: "Manitoba",
             state: "MB"
-          }
+          },
+		  isActive:true,
+		  balance:50,
+		  registered:new Date('11/25/2017 10:30:00')
         }
       ]; 
 
@@ -60,11 +75,28 @@ export class ThirdExampleComponent implements OnInit {
           street: "345 Mill ave",
           city: "Montreal",
           state: "QC"
-        }
+        },
+        image: 'http://lorempixel.com/600/600/people/4'
     });
+
+	this.setCurrentClasses();
+	this.setcurrentStyles();
   }
 
   addUser(user:User){
     this.users.push(user);
+  }
+
+  setCurrentClasses(){
+    this.currentClasses = {
+      'btn-success': this.enabledAdd,
+      'big-text' : this.showExtended
+    }
+  }
+  setcurrentStyles(){
+	  this.currentStyles = {
+		  'padding-top': this.showExtended ?'0':'40px',
+		  'font-size': this.showExtended ? '': '40px' 
+	  }
   }
 }

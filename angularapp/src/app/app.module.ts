@@ -5,12 +5,16 @@ import { AppComponent } from './app.component';
 import { FirstComponent } from './testComponents/firstExample/first.component';
 import { SecondComponentsComponent} from './testComponents/secondComponents/secondComponents.component';
 import { ThirdExampleComponent } from './testComponents/thirdExample/thirdExample.component';
+import { FourthExampleComponent } from './testComponents/fourthExample/fourthExample.component'; // navigation
+import { FifthExampleComponent } from './testComponents/fifthExample/fifthExample.component';
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponent,
     SecondComponentsComponent,
-    ThirdExampleComponent
+    ThirdExampleComponent,
+    FourthExampleComponent,
+    FifthExampleComponent
   ],
   imports: [
     BrowserModule
