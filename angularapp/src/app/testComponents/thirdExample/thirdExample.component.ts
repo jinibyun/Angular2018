@@ -35,7 +35,7 @@ export class ThirdExampleComponent implements OnInit {
             city: "Toronto",
             state: "ON"
           },
-          image: 'http://lorempixel.com/600/600/people/3',
+          image: 'https://imgplaceholder.com/600x600/cccccc/757575/glyphicon-picture',
 		  isActive: true,
 		  balance:100,
 		  registered:new Date('01/02/2018 08:30:00')
@@ -43,7 +43,7 @@ export class ThirdExampleComponent implements OnInit {
         {
           firstName : "Kevin",
           lastName : "Johnson"   ,
-          image: 'http://lorempixel.com/600/600/people/2'   ,
+          image: 'https://imgplaceholder.com/600x600/cccccc/757575/glyphicon-picture'   ,
 		  isActive: false   ,
 		  balance:200,
 		  registered:new Date('03/11/2017 08:30:00') 
@@ -76,7 +76,7 @@ export class ThirdExampleComponent implements OnInit {
           city: "Montreal",
           state: "QC"
         },
-        image: 'http://lorempixel.com/600/600/people/4'
+        image: 'https://imgplaceholder.com/600x600/cccccc/757575/glyphicon-picture'
     });
 
 	this.setCurrentClasses();

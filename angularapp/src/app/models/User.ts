@@ -12,3 +12,18 @@ export interface User {
 	balance?: number,
 	registered?: any
 }
+
+// This is for testing form and event (fifthExample)
+export interface User2 {
+	firstName : string,
+	lastName: string,
+	age?: number, // optional
+	address?: {
+		street? : string,
+		city?: string,
+		state?: string
+	},
+	isActive? : boolean,
+	registered?: any,
+	hide? : boolean
+}
