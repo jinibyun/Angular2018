@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { FirstComponent } from './testComponents/firstExample/first.component';
 import { SecondComponentsComponent} from './testComponents/secondComponents/secondComponents.component';
@@ -17,7 +17,8 @@ import { FifthExampleComponent } from './testComponents/fifthExample/fifthExampl
     FifthExampleComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

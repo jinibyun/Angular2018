@@ -7,12 +7,22 @@ import { User2 } from '../../models/User'; // call interface (manually create)
   styleUrls: ['./fifthExample.component.css']
 })
 export class FifthExampleComponent implements OnInit {
+  user: User2 = {
+    firstName : '',
+    lastName : '',
+    age: null,
+    address : {
+      street : '',
+      city: '',
+      state: ''
+    }
+  }
 
   users:User2[];
   showExtended : boolean = true;
   loaded:boolean = true; // mimi data loading
   
-  enabledAdd:boolean = true; // property binding
+  enabledAdd:boolean = false; // property binding
   showUserForm: boolean = false;
   constructor() { }
 
@@ -54,8 +64,21 @@ export class FifthExampleComponent implements OnInit {
       ]; 
   }
 
-  addUser(user:User2){
-    this.users.push(user);
+  addUser(){
+    // this.users.push(this.user);
+    this.user.isActive = true;
+    this.user.registered = new Date();
+    this.users.unshift(this.user);
+    this.user = {
+      firstName : '',
+      lastName : '',
+      age: null,
+      address : {
+        street : '',
+        city: '',
+        state: ''
+      }
+    }
   }  
 
   // toggleHide(user:User2){
