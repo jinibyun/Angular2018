@@ -7,6 +7,7 @@ import { SecondComponentsComponent} from './testComponents/secondComponents/seco
 import { ThirdExampleComponent } from './testComponents/thirdExample/thirdExample.component';
 import { FourthExampleComponent } from './testComponents/fourthExample/fourthExample.component'; // navigation
 import { FifthExampleComponent } from './testComponents/fifthExample/fifthExample.component';
+import { SixthExampleComponent } from './testComponents/sixthExample/sixthExample.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +15,8 @@ import { FifthExampleComponent } from './testComponents/fifthExample/fifthExampl
     SecondComponentsComponent,
     ThirdExampleComponent,
     FourthExampleComponent,
-    FifthExampleComponent
+    FifthExampleComponent,
+    SixthExampleComponent
   ],
   imports: [
     BrowserModule,

@@ -27,3 +27,12 @@ export interface User2 {
 	registered?: any,
 	hide? : boolean
 }
+
+export interface User3 {
+	firstName : string,
+	lastName: string,
+	email: string,
+	isActive? : boolean,
+	registered?: any,
+	hide? : boolean
+}
