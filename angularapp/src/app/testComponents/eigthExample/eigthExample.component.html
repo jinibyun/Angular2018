@@ -1,0 +1,14 @@
+<p>Explanation</p>
+<ul>
+  <li>Angular Service - HTTP Service</li>  
+  <li>(It is similar to seventhExample, but using "HTTP Service")</li>
+  <li>using https://jsonplaceholder.typicode.com/posts</li>
+</ul>
+
+<p>POSTS</p>
+<div class="card" *ngFor ="let post of posts">
+  <div class="card-body">
+    <h3>{{ post.title }}</h3>
+    <p>{{ post.body}}</p>
+  </div>
+</div>
