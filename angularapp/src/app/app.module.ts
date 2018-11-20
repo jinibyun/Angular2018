@@ -15,7 +15,8 @@ import { DataService } from './services/data.service';
 import { PostService } from './services/post.service';
 
 import { EigthExampleComponent } from './testComponents/eigthExample/eigthExample.component';
-
+import { NinthExampleComponent } from './testComponents/ninthExample/ninthExample.component';
+NinthExampleComponent
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { EigthExampleComponent } from './testComponents/eigthExample/eigthExampl
     FifthExampleComponent,
     SixthExampleComponent,
     SeventhExampleComponent,
-    EigthExampleComponent
+    EigthExampleComponent,
+    NinthExampleComponent
   ],
   imports: [
     BrowserModule,
