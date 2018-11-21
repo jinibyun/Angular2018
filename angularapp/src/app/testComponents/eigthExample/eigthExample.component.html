@@ -8,7 +8,7 @@
 </ul>
 
 <!-- This is about post form -->
-<app-ninthExample [currentPost] = "currentPost" [isEdit]="isEdit" (newPost) ="onNewPost($event)"></app-ninthExample>
+<app-ninthExample [currentPost] = "currentPost" [isEdit]="isEdit" (newPost) ="onNewPost($event)" (updatePost)="onUpdatedPost($event)"></app-ninthExample>
 
 <p>POSTS</p>
 <div class="card" *ngFor ="let post of posts">
@@ -16,7 +16,7 @@
     <h3>{{ post.title }}</h3>
     <p>{{ post.body }}</p>
     <hr>
-    <button class="btn btn-danger"><i class="fa fa-remove"></i></button>
+    <button class="btn btn-danger" (click)="removePost(post)"><i class="fa fa-remove"></i></button>
     <button (click) ="editPost(post)" class="btn btn-light"><i class="fa fa-pencil"></i></button>
   </div>
 </div>

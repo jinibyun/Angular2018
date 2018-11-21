@@ -16,7 +16,10 @@ import { PostService } from './services/post.service';
 
 import { EigthExampleComponent } from './testComponents/eigthExample/eigthExample.component';
 import { NinthExampleComponent } from './testComponents/ninthExample/ninthExample.component';
-NinthExampleComponent
+
+import { HomeComponent } from './testComponents/home/home.component';
+
+import { AppRoutingModule } from './/app-routing.module';
 
 
 @NgModule({
@@ -30,12 +33,14 @@ NinthExampleComponent
     SixthExampleComponent,
     SeventhExampleComponent,
     EigthExampleComponent,
-    NinthExampleComponent
+    NinthExampleComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [
     DataService,

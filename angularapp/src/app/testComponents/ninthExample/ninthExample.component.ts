@@ -11,6 +11,7 @@ export class NinthExampleComponent implements OnInit {
 
   // post: Post;
   @Output() newPost: EventEmitter<Post> = new EventEmitter();
+  @Output() updatePost: EventEmitter<Post> = new EventEmitter();
   @Input() currentPost: Post;
   @Input() isEdit: Boolean;
 
@@ -33,7 +34,14 @@ export class NinthExampleComponent implements OnInit {
     }
   }
 
-  updatePost(){
-    console.log(123);
+  editPost(){
+    // console.log(123);
+    this.postService.updatePost(this.currentPost).subscribe(
+      post =>{
+         console.log(post);
+         this.isEdit = false;
+         this.updatePost.emit(post);
+      }
+    );
   }
 }
