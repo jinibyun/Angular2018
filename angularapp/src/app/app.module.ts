@@ -19,7 +19,9 @@ import { NinthExampleComponent } from './testComponents/ninthExample/ninthExampl
 
 import { HomeComponent } from './testComponents/home/home.component';
 
-import { AppRoutingModule } from './/app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
+import { PostDetailComponent } from './testComponents/post-detail/post-detail.component';
+import { NotFoundComponent } from './testComponents/not-found/not-found.component';
 
 
 @NgModule({
@@ -34,7 +36,9 @@ import { AppRoutingModule } from './/app-routing.module';
     SeventhExampleComponent,
     EigthExampleComponent,
     NinthExampleComponent,
-    HomeComponent
+    HomeComponent,
+    PostDetailComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
